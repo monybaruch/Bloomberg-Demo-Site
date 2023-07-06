@@ -1,0 +1,51 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(/assets/font/AvenirNext-Regular.ttf);
+  font-family: AvenirNext-Regular;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: AvenirNext-Regular;
+}
+
+.nav-grid-container {
+  display: grid;
+  background: rgb(28, 28, 28);
+  width: 100%;
+  height: 100px;
+  grid-template-rows: 4fr 10fr;
+  grid-template-columns: 1fr;
+  padding: 0 13%;
+}
+
+.sub-nav {
+  grid-area: 1 / 1 / 2 / 2;
+  height: 100%;
+}
+
+.sub-nav .sub-nav-flex > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.sub-nav .sub-nav-flex > ul > li > a {
+  color: white;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  padding: 0 10px;
+}
+
+.sub-nav .sub-nav-flex > ul > li > a > span {
+  color: #ffa028;
+}
+
+.main-nav {
+  grid-area: 2 / 1 / 3 / 2;
+}
