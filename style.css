@@ -41,7 +41,8 @@
 .sub-nav .sub-nav-flex > ul > li > a {
   font-family: 'Prompt', sans-serif;
   font-size: 11px;
-  padding: 0 10px;
+  padding-right: 10px;
+  margin-top: 3px;
 }
 
 .sub-nav .sub-nav-flex > ul > li > a > span {
