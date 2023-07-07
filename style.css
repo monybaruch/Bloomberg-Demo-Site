@@ -116,6 +116,31 @@ main > .content > ul > li > a {
   transition: all 0.2s linear;
 }
 
-main > .content > ul > li > a:hover {
+main > .content > .news-links > li > a:hover {
   font-family: AvenirNext-Bold;
+}
+.stock-market {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.stock-market > li > a > span {
+  color: black;
+  padding: 0 5px;
+  font-weight: 500;
+}
+
+.stock-market > li > a > span > i {
+  color: red;
+  padding: 0 3px;
+}
+
+i.fa-solid.fa-caret-up {
+  color: green;
+}
+
+.stock-market > li > a:hover {
+  opacity: 0.7;
+  font-family: AvenirNext-Regular;
 }
