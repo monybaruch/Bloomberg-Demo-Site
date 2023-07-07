@@ -11,6 +11,8 @@
   list-style-type: none;
   text-decoration: none;
   font-family: AvenirNext-Regular;
+  font-weight: 600;
+  color: white;
 }
 
 .nav-grid-container {
@@ -35,9 +37,7 @@
 }
 
 .sub-nav .sub-nav-flex > ul > li > a {
-  color: white;
   font-family: 'Prompt', sans-serif;
-  font-weight: 600;
   font-size: 11px;
   padding: 0 10px;
 }
@@ -48,4 +48,55 @@
 
 .main-nav {
   grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav .main-nav-left > h2 {
+  font-weight: 900;
+  font-size: 2.3rem;
+}
+.main-nav-right > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-nav-right > ul > li > a {
+  font-size: 14px;
+  margin-left: 15px;
+  padding: 7px 0;
+}
+.main-nav-right > ul > li > a:hover,
+.main-nav-right > ul > li > a:hover > i {
+  color: #999;
+}
+
+.main-nav-right > ul > li > .magnifying-glass {
+  border: 1px solid white;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+#subscribe {
+  padding: 6px 14px;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: black;
+  background: white;
+}
+
+main {
+  background: rgb(62, 211, 3);
+  width: 100%;
+  height: 100vh;
+}
+
+main > .content {
+  width: 73%;
+  height: inherit;
+  background: #ffa028;
+  margin: 0 auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
