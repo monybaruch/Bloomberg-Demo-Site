@@ -135,6 +135,7 @@ main > .content > .news-links > li > a:hover {
 .stock-market > li > a > span > i {
   color: red;
   padding: 0 3px;
+  font-size: 12px;
 }
 
 i.fa-solid.fa-caret-up {
