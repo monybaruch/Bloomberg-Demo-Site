@@ -91,7 +91,7 @@
 
 main {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
 }
 
 main > .content {
@@ -145,4 +145,12 @@ i.fa-solid.fa-caret-up {
 .stock-market > li > a:hover {
   opacity: 0.7;
   font-family: AvenirNext-Regular;
+}
+
+.articles {
+  display: grid;
+}
+
+.articles > div {
+  color: black;
 }
