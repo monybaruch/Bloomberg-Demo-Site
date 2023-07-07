@@ -1,9 +1,11 @@
 @font-face {
-  font-family: myFirstFont;
   src: url(/assets/font/AvenirNext-Regular.ttf);
   font-family: AvenirNext-Regular;
 }
-
+@font-face {
+  src: url(/assets/font/AvenirNext-Bold.ttf);
+  font-family: AvenirNext-Bold;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -87,7 +89,6 @@
 }
 
 main {
-  background: rgb(62, 211, 3);
   width: 100%;
   height: 100vh;
 }
@@ -95,8 +96,26 @@ main {
 main > .content {
   width: 73%;
   height: inherit;
-  background: #ffa028;
   margin: 0 auto;
   border-left: 1px solid black;
   border-right: 1px solid black;
+}
+main > .content > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+}
+
+main > .content > ul > li {
+  padding: 13px 8px;
+}
+main > .content > ul > li > a {
+  color: black;
+  font-size: 14px;
+  transition: all 0.2s linear;
+}
+
+main > .content > ul > li > a:hover {
+  font-family: AvenirNext-Bold;
 }
