@@ -400,11 +400,11 @@ i.fa-solid.fa-caret-up {
 
 .right-aside-articles > div {
   padding-bottom: 12px;
+  border-bottom: dotted 1px gray;
 }
 
 .right-aside-articles > h5 {
   border-bottom: dotted 1px gray;
-  border-top: dotted 1px gray;
   font-size: 12px;
   color: var(--secondary-text);
   font-weight: 400;
@@ -455,6 +455,6 @@ i.fa-solid.fa-caret-up {
 }
 .check > input[type='checkbox'] {
   margin-right: 7px;
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
 }
