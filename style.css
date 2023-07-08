@@ -1,6 +1,8 @@
 :root {
   --primary-text: white;
   --secondary-text: black;
+  --normal-font: AvenirNext-Regular;
+  --bold-font: AvenirNext-Bold;
 }
 
 @font-face {
@@ -17,7 +19,7 @@
   margin: 0;
   list-style-type: none;
   text-decoration: none;
-  font-family: AvenirNext-Regular;
+  font-family: var(--normal-font);
   font-weight: 600;
   color: var(--primary-text);
 }
@@ -34,9 +36,11 @@
   color: #0068ff;
   font-weight: 700;
   font-size: 14px;
+  margin: 12px 0;
+  font-family: var(--bold-font);
 }
 
-.article-time {
+.small-font {
   color: #767676;
   font-size: 12px;
   font-weight: 400;
@@ -56,6 +60,7 @@
   font-weight: 700;
   font-size: 16px;
   color: var(--secondary-text);
+  font-family: var(--bold-font);
 }
 .small-h3:hover {
   text-decoration: underline solid black 2px;
@@ -162,7 +167,7 @@ main > .content > ul > li > a {
 }
 
 main > .content > .news-links > li > a:hover {
-  font-family: AvenirNext-Bold;
+  font-family: var(--bold-font);
 }
 .stock-market {
   display: flex;
@@ -188,7 +193,7 @@ i.fa-solid.fa-caret-up {
 
 .stock-market > li > a:hover {
   opacity: 0.7;
-  font-family: AvenirNext-Regular;
+  font-family: var(--normal-font);
 }
 
 .articles {
@@ -222,8 +227,6 @@ i.fa-solid.fa-caret-up {
 }
 .left-aside-articles {
   grid-area: 3 / 1 / 11 / 2;
-  border: 1px solid black;
-  background-color: bisque;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -233,8 +236,10 @@ i.fa-solid.fa-caret-up {
 
 .right-aside-articles {
   grid-area: 3 / 6 / 11 / 8;
-  border: 1px solid black;
-  background-color: rgb(232, 20, 168);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
 }
 
 .smaller-articles1 {
@@ -279,7 +284,7 @@ i.fa-solid.fa-caret-up {
 .main-article-header > h1 {
   color: var(--secondary-text);
   padding: 3px 10px;
-  font-family: AvenirNext-Bold;
+  font-family: var(--bold-font);
   font-weight: 600;
 }
 
@@ -301,7 +306,7 @@ i.fa-solid.fa-caret-up {
 .main-article-p2 > p,
 .main-article-p3 > p {
   padding: 5px;
-  font-family: AvenirNext-Regular;
+  font-family: var(--normal-font);
   font-size: 18px;
   color: var(--secondary-text);
 }
@@ -331,7 +336,7 @@ i.fa-solid.fa-caret-up {
   font-weight: 700;
   padding-bottom: 60px;
   border-bottom: dotted 1px gray;
-  font-family: AvenirNext-Bold;
+  font-family: var(--bold-font);
 }
 
 .sub-article-content > h2:hover {
@@ -371,4 +376,85 @@ i.fa-solid.fa-caret-up {
 .left-aside-articles > div {
   border-bottom: dotted 1px gray;
   padding-bottom: 15px;
+}
+
+/* right aside */
+
+.right-aside-h2 {
+  font-size: 26px;
+  padding: 5px 6px;
+  font-weight: 700;
+  color: var(--secondary-text);
+  border-bottom: 0.667px solid black;
+  border-top: 0.667px solid black;
+  font-family: var(--bold-font);
+}
+
+.right-aside-h2 > span {
+  margin-left: 7px;
+  color: #0068ff;
+  font-size: 26px;
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+
+.right-aside-articles > div {
+  padding-bottom: 12px;
+}
+
+.right-aside-articles > h5 {
+  border-bottom: dotted 1px gray;
+  border-top: dotted 1px gray;
+  font-size: 12px;
+  color: var(--secondary-text);
+  font-weight: 400;
+  padding: 9px 0;
+}
+
+.news-letter > h3 {
+  color: var(--secondary-text);
+  margin: 30px 0 10px 0;
+}
+
+.news-letter > p {
+  color: var(--secondary-text);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.news-letter > div > u {
+  color: var(--secondary-text);
+  text-decoration: underline;
+  color: #393c41;
+  font-weight: 600;
+}
+.news-letter > form {
+  margin-bottom: 14px;
+}
+.news-letter > form > input[type='email'] {
+  color: var(--secondary-text);
+  border-radius: 4px;
+  padding: 7px;
+  margin-bottom: 14px;
+}
+
+.news-letter > form > button {
+  color: var(--secondary-text);
+  padding: 9px 40px;
+  font-weight: 700;
+  border: 1.5px solid black;
+  margin-left: 15px;
+  background: white;
+}
+.news-letter > form > button:hover {
+  background: #efefef;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+}
+.check > input[type='checkbox'] {
+  margin-right: 7px;
+  height: 15px;
+  width: 15px;
 }
