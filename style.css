@@ -69,11 +69,15 @@
 }
 
 /* nav bars */
-.nav-grid-container {
-  display: grid;
+
+nav {
   background: rgb(28, 28, 28);
   width: 100%;
-  height: 100px;
+  height: 100%;
+}
+
+.nav-grid-container {
+  display: grid;
   grid-template-rows: 4fr 10fr;
   grid-template-columns: 1fr;
   padding: 0 14%;
@@ -150,6 +154,7 @@ main {
 
 main > .content {
   width: 73%;
+  max-width: 1230px;
   height: inherit;
   margin: 0 auto;
   border-right: 1px solid black;
@@ -160,6 +165,7 @@ main > .content > ul {
   align-items: center;
   justify-content: space-evenly;
   border-bottom: 1px solid black;
+  overflow: hidden;
 }
 
 /* stock-market nav */
